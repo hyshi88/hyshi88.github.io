@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新浪新闻</title>
+</head>
+<style>
+    #video {
+        position: relative;
+        width: 1000px;
+        height: 2000px;
+        box-sizing: border-box;
+        border: 100px solid #e6e9cc;
+        background-color: rgb(196, 204, 194);
+        margin: auto;
+
+
+    }
+</style>
+
+<body>
+    <div id="video">
+        <image><img src="https://n.sinaimg.cn/news/app_download/3_01.jpg" width="20">新浪新聞<a
+                href="https://news.sina.com.cn/zt/nba">nh</a>
+            <h1>新浪新闻</h1>
+            <h2>
+                NBA历史最疯狂一日 惊掉下巴背后是利益之手
+            </h2>
+            <p>
+                毫无疑问，我们又一次见证了历史，截至今晨4点，2025年NBA交易截止日成为联盟史上最疯狂的交易截止日，没有之一。
+            </p>
+            <video src="../演示/253423_small.mp4" width="800" height="500" controls="controls"></video>
+            <p>
+                本赛季交易截止日的前一周一共有63名球员被交易，历史最多。
+            </p>
+            <p>
+                不过，本赛季交易截止日最疯狂的点并不仅仅是参与交易人数最多，而是达成交易的级别历史罕见，那是电子游戏里都无法模拟出的罕见。
+            </p>
+
+            <form action="" method="post">
+                firstname: <input type="text" name="firstname"><br>
+                lastname: <input type="text" name="lastname"><br>
+                email: <input type="email" name="email"><br>
+                描述：<textarea name="description" cols="30" rows="10"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+            <table border="2px" cellspacing="0" width="500px">
+                <tr>
+                    <th>
+                        name
+                    </th>
+                    <th>
+                        password
+                    </th>
+                    <th>
+                        email
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        John
+                    </td>
+                    <td>
+                        john123
+                    </td>
+                    <td>
+                        john@gmail.com
+                    </td>
+                </tr>
+            </table>
+
+    </div>
+
+</body>
+<script>
+    var arr = [1, 2, 3, 4, 5];
+    arr[10]="qd";
+    arr.push(1,2,3)
+    console.log(arr);
+    arr.splice(0,2);
+    console.log(arr);
+    var obj = '{"name":"John","age":30,"city":"New York","address":["New York","上海"]}'
+    alert(obj.name);
+    var obj2 = JSON.parse(obj);
+    alert(obj2.name);
+    alert(JSON.stringify(obj2));
+</script>
+
+</html>
